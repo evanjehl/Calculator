@@ -1,0 +1,63 @@
+body {
+  background-color:blue
+}
+
+#frame {
+  width:300px;
+  height:450px;
+  background-color:#7C7A7A;
+  border-radius:15px;
+  position:relative;
+  margin:0 auto;
+  margin-top:100px;
+  box-shadow: 5px 5px 20px 2px;
+  padding:20px;
+}
+
+#screen {
+  position:relative;
+  height:125px;
+  width:260px;
+  margin:0 auto;
+  margin-bottom:10px;
+  border-radius:10px;
+  background-color:#66C710;
+  font-family:'Orbitron'
+}
+
+#input {
+  margin-top:10px;
+  font-size:25pt;
+}
+
+#equation {
+  margin-top:10px;
+}
+
+button {
+  box-shadow:0px 4px 0px #44000E;
+  height:45px;
+  width:45px;
+  margin-top:10px;
+  margin-left:15px;
+  border-radius:10px;
+  background-color:#7F0F93;
+  border:none;
+  color:silver
+}
+
+button:focus {
+  outline: 0
+}
+
+#equals {
+  height:100px;
+}
+
+#zero {
+  width:105px
+}
+
+.last-col {
+  margin-left:5px
+}
