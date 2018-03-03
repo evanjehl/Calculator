@@ -1,5 +1,7 @@
+//beginning blank state of equation input
 var equation = [''];
 
+//operator list
 var operators = {
   'add':'+',
   'subtract':'-',
@@ -8,6 +10,7 @@ var operators = {
   'equals':'='
 };
 
+//changes style of clicked button to 'pressed' state and sends input associated with button to be evaluated in overall expression
 function press(id) {
   $('#' + id).css({
     'transform': 'translateY(4px)',
@@ -16,13 +19,15 @@ function press(id) {
   evaluate(id);
 }
 
+//changes style of clicked button to 'depressed' state after release of mouse
 function depress(id) {
   $('#' + id).css({
     'transform': 'translateY(0px)',
     'box-shadow':'0px 4px 0px #44000E'
   });
 }
-  
+
+//checks if input is an operator
 function isOperator(id) {
   if (id === 'add' || id === 'subtract' || id === 'multiply' || id === 'divide' || id === 'equals' || id === '+' || id === '-' || id === '*' || id === '/' || id === '=') {
     return true;
@@ -30,6 +35,7 @@ function isOperator(id) {
   return false;
 }
 
+//takes input from button, checks if number or operator, and evaluates current total accordingly, then updates display
 function evaluate(id) {
   if (equation.indexOf('=') === -1) {    
     if ((!isNaN(parseInt(id)) || id === 'zero' || id === 'point') && equation[equation.length - 1].length <= 7) {
@@ -108,6 +114,7 @@ function evaluate(id) {
   updateScreen(equation);
 }
 
+//updates display
 function updateScreen(equation) {
   if (equation[0] === '') {
     $('#input').html('0');
@@ -138,14 +145,17 @@ function updateScreen(equation) {
   }
 }
 
+//click trigger for buttons
 $("button").mousedown(function() {
   press(this.id);
 });
 
+//triggered after click for buttons
 $("button").mouseup(function() {
   depress(this.id);
 });
 
+//key functionality for buttons
 $(document).keydown(function(e) {
   var key = e.which;
   switch (key) {

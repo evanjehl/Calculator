@@ -2,6 +2,7 @@ body {
   background-color:blue
 }
 
+/*main frame of calculator*/
 #frame {
   width:300px;
   height:450px;
@@ -14,6 +15,7 @@ body {
   padding:20px;
 }
 
+/*screen properties*/
 #screen {
   position:relative;
   height:125px;
@@ -25,15 +27,18 @@ body {
   font-family:'Orbitron'
 }
 
+/*top row of display, reflecting current input*/
 #input {
   margin-top:10px;
   font-size:25pt;
 }
 
+/*bottom section of display, reflecting aggregate input*/
 #equation {
   margin-top:10px;
 }
 
+/*button style*/
 button {
   box-shadow:0px 4px 0px #44000E;
   height:45px;
@@ -46,18 +51,22 @@ button {
   color:silver
 }
 
+/*removes default button behavior*/
 button:focus {
   outline: 0
 }
 
+/*equals button special properties*/
 #equals {
   height:100px;
 }
 
+/*zero button special properties*/
 #zero {
   width:105px
 }
 
+/*last column special properties*/
 .last-col {
-  margin-left:35px
+  margin-left:5px
 }
