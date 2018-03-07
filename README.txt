@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/evanjehl/pen/NwrbEx.
+A live preview of this app can be found at https://codepen.io/evanjehl/pen/NwrbEx.
 
- 
+This app implements a standard calculator with basic arithmetic functions of addition, subtraction, multiplication, and division. The buttons can be clicked but can also be triggered by corresponding key presses. Its display includes a larger top row that displays the current term in the user's input and a bottom readout that shows the entire input as a string. If the top row is overfilled in evaluating the total, the total is automatically converted to scientific notation. If filled to capacity during an individual input, no further numerical or decimal entry is permitted in display or logic. If the input is overfilled during entry (>60 characters), it will continue to scroll horizontally, always displaying the last 60 characters. Though its display does not appear to group results from each binary operation, its logic does evaluate the total at each binary operation. AC and CE buttons clear entire input and last entry, respectively.
